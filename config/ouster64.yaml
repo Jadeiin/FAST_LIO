@@ -40,6 +40,14 @@
             scan_publish_en:  true       # false: close all the point cloud output
             dense_publish_en: true       # false: low down the points number in a global-frame point clouds scan.
             scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
+            odom_topic: "/Odometry"
+            path_topic: "/path"
+            cloud_reg_topic: "/cloud_registered"
+            cloud_reg_body_topic: "/cloud_registered_body"
+            cloud_eff_topic: "/cloud_effected"
+            laser_map_topic: "/Laser_map"
+            fixed_frame: "camera_init"
+            child_frame: "body"
 
         pcd_save:
             pcd_save_en: true
